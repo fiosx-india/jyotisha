@@ -3,6 +3,10 @@
 ஸ்ட்ரீம்லிட் (Streamlit) அடிப்படையிலான முழுமையான ஜோதிட கணிப்பு செயலி
 """
 
+import streamlit as st
+st.write("Hello World - Test")
+
+import streamlit as st
 import pandas as pd
 from datetime import datetime, date, time
 from PIL import Image
@@ -20,9 +24,9 @@ from utils.predictions import PredictionEngine
 from utils.compatibility import CompatibilityEngine
 from utils.database import ProfileDatabase
 
-import streamlit as st
-
-# ★ முதலில் set_page_config - முதல் Streamlit கட்டளை
+# ---------------------------------------------------------------
+# பக்க கட்டமைப்பு (Page Config)
+# ---------------------------------------------------------------
 st.set_page_config(
     page_title="🔥 ஜோதிடம் - Vedic Astrology",
     page_icon="🌟",
@@ -36,14 +40,10 @@ st.set_page_config(
 def load_css():
     st.markdown("""
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600;700&display=swap');
-    * { font-family: 'Noto Sans Tamil', sans-serif; }
-    .main { background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: #fff; padding: 20px; border-radius: 15px; }
-    .stApp { background: #0f0c29; }
-    .prediction-card {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        border-radius: 15px; padding: 25px; margin: 15px 0;
-        color: white; box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@300;400;500;700&display=swap');
+    
+    * {
+        font-family: 'Noto Sans Tamil', sans-serif;
     }
     
     .main-header {

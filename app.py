@@ -4,35 +4,31 @@
 """
 
 import streamlit as st
-st.write("Hello World - Test")
 
-import streamlit as st
-import pandas as pd
-from datetime import datetime, date, time
-from PIL import Image
-import io
-import base64
-import plotly.graph_objects as go
-import plotly.express as px
-
-from utils.constants import (
-    RASI_TAMIL, RASI_ENGLISH, NAKSHATRAS, PLANETS_TAMIL,
-    PLANET_SIGNFICANCE, PORUTHAM_LIST
-)
-from utils.vedic import BirthChart
-from utils.predictions import PredictionEngine
-from utils.compatibility import CompatibilityEngine
-from utils.database import ProfileDatabase
-
-# ---------------------------------------------------------------
-# பக்க கட்டமைப்பு (Page Config)
-# ---------------------------------------------------------------
+# ★ முதலில் set_page_config - முதல் Streamlit கட்டளை
 st.set_page_config(
     page_title="🔥 ஜோதிடம் - Vedic Astrology",
     page_icon="🌟",
     layout="wide",
     initial_sidebar_state="expanded"
 )
+
+import pandas as pd
+import datetime
+from datetime import datetime, timedelta
+import time
+import math
+import json
+import sqlite3
+import hashlib
+import random
+from pathlib import Path
+
+# இதர மாட்யூல்கள் (உங்கள் utils கோப்புகள் இருக்க வேண்டும்)
+# from utils.vedic import ...
+# from utils.predictions import ...
+# from utils.compatibility import ...
+# from utils.database import ...
 
 # ---------------------------------------------------------------
 # CSS ஸ்டைலிங்

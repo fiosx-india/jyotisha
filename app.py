@@ -3,6 +3,10 @@
 ஸ்ட்ரீம்லிட் (Streamlit) அடிப்படையிலான முழுமையான ஜோதிட கணிப்பு செயலி
 """
 
+import streamlit as st
+st.write("Hello World - Test")
+
+import streamlit as st
 import pandas as pd
 from datetime import datetime, date, time
 from PIL import Image
@@ -19,17 +23,6 @@ from utils.vedic import BirthChart
 from utils.predictions import PredictionEngine
 from utils.compatibility import CompatibilityEngine
 from utils.database import ProfileDatabase
-
-import streamlit as st
-# ---------------------------------------------------------------
-# பக்க கட்டமைப்பு (Page Config)
-# ---------------------------------------------------------------
-st.set_page_config(
-    page_title="🔥 ஜோதிடம் - Vedic Astrology",
-    page_icon="🌟",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
 
 # ---------------------------------------------------------------
 # CSS ஸ்டைலிங்

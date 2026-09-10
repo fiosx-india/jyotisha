@@ -2,8 +2,11 @@
 🔥 ஜோதிட பயன்பாடு - Vedic Astrology Prediction App
 ஸ்ட்ரீம்லிட் (Streamlit) அடிப்படையிலான முழுமையான ஜோதிட கணிப்பு செயலி
 """
-import streamlit as st
 
+import streamlit as st
+st.write("Hello World - Test")
+
+import streamlit as st
 import pandas as pd
 from datetime import datetime, date, time
 from PIL import Image

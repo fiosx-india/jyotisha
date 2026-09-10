@@ -3,7 +3,6 @@
 ஸ்ட்ரீம்லிட் (Streamlit) அடிப்படையிலான முழுமையான ஜோதிட கணிப்பு செயலி
 """
 
-import streamlit as st
 import pandas as pd
 from datetime import datetime, date, time
 from PIL import Image

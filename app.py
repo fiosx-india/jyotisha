@@ -36,10 +36,14 @@ st.set_page_config(
 def load_css():
     st.markdown("""
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@300;400;500;700&display=swap');
-    
-    * {
-        font-family: 'Noto Sans Tamil', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600;700&display=swap');
+    * { font-family: 'Noto Sans Tamil', sans-serif; }
+    .main { background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: #fff; padding: 20px; border-radius: 15px; }
+    .stApp { background: #0f0c29; }
+    .prediction-card {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 15px; padding: 25px; margin: 15px 0;
+        color: white; box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     }
     
     .main-header {

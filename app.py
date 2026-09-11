@@ -182,11 +182,14 @@ def show_sidebar():
     with st.sidebar:
         st.markdown('<div class="sidebar-header">🧭 மெனு</div>', unsafe_allow_html=True)
         
+        # பழைய கோட்:
+        # menu = st.radio("", ["🏠 முகப்பு", ...], label_visibility="collapsed")
+
+        # புதிய கோட்:
         menu = st.radio(
-            "",
-            ["🏠 முகப்பு", "👤 புதிய ஜாதகம்", "🔮 கணிப்புகள்", 
-             "💑 திருமண பொருத்தம்", "✋ கைரேகை", "📋 சுயவிவரங்கள்"],
-            label_visibility="collapsed"
+            "மெனு தேர்வு",  # லேபிளுக்கு ஒரு பெயர் கொடுங்கள்
+            ["🏠 முகப்பு", "👤 புதிய ஜாதகம்", "🔮 கணிப்புகள்", "💑 திருமண பொருத்தம்", "✋ கைரேகை", "📋 சுயவிவரங்கள்"],
+            label_visibility="collapsed" # இது லேபிளை மறைத்துவிடும்
         )
         
         st.markdown("---")

@@ -353,7 +353,7 @@ def display_chart(chart: BirthChart):
     dasha_df = dasha_df[['lord', 'start_age', 'end_age', 'total_years']]
     dasha_df.columns = ['கிரகம்', 'தொடக்கம் (வயது)', 'முடிவு (வயது)', 'கால அளவு (ஆண்டுகள்)']
     
-    st.dataframe(dasha_df, use_container_width=True, hide_index=True)
+    st.dataframe(dasha_df, width=1000, hide_index=True) 
     
     # Current dasha highlight
     if chart.current_dasha:
